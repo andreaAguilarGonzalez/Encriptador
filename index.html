@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <div class="texto-der">
+                <div class="caja">
+                    <img src="imagenes/Logo.png" alt="Logo">
+                </div>
+                <div class="form-der">
+                    <form>
+                        <textarea cols="62" rows="9" id="mensaje" class="input-text" required placeholder="Ingrese el texto aquí"></textarea>
+                        <p class="informacion"><img src="imagenes/signo-de-exclamacion-en-un-circulo.png" id="let-gris" alt="Ningún mensaje"> Solo letras minúsculas y sin acentos</p>
+    
+                        <input type="button" value="Encriptar" class="boton" id="obscuro" onclick="cifrar()">
+                        <input type="button" value="Desencriptar" class="boton" id="claro" onclick="descifrar()">
+                    </form>
+                </div>
+                
+            </div>
+            <div class="texto-izq">
+                <div class="text-resul-ini" id="resul-ini">
+                    <img class="img-muneco" src="imagenes/Muñeco.png" alt="Ningún mensaje">
+                    <div class="text-aviso">
+                        <p class="ningun-encontrado">Ningún mensaje fue encontrado</p>
+                        <p id="desencrip-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="text-resul-final" id="resul-final">
+                    <p id="resultado"></p>
+                    <input type="button" value="Copiar" class="boton" id="blanco" onclick="copiar()">
+                </div>
+            </div>
+        </main>        
+    </body>
+</html>
